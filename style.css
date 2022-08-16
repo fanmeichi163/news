@@ -1,0 +1,220 @@
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+
+#universe{
+    background: radial-gradient(#555,#000);
+}
+
+@keyframes starFlash{
+    from{opacity: 1;}
+    to{opacity: 0.3;}
+}
+
+#stars{
+    height: 100%;
+    background-image: url("stars.png");
+    background-size: cover;
+    animation: starFlash 3s infinite alternate;
+}
+
+@keyframes sunLight{
+    from{box-shadow: 0 0 45px #f5c91a;}
+    to{box-shadow: 0 0 90px #f5c91a;}
+}
+
+#sun{
+    width: 100px;
+    height: 100px;
+    /* background-color: orange; */
+    background: radial-gradient(#f5c313,#ec7e08);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    border-radius: 100px;
+    box-shadow: 0 0 45px #f5c91a;
+    animation: sunLight 3s infinite alternate;
+}
+#earthOrbit{
+    height: 190px;
+    width: 190px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -96px;
+    margin-left: -97px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 14s linear infinite;
+}
+
+#earth{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -35px;
+    top:50%;
+    animation: spin 30s linear infinite;
+    
+
+}
+@keyframes spin{
+    from{ transform:rotate(0)}
+    to{transform: rotate(360deg);    }
+}
+
+#moonOrbit{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    margin-left: -40px;
+    /* border: 1px solid red; */
+    border-radius: 100%; 
+    animation: spin 10s linear infinite; 
+} 
+#moon{
+    width: 5px;
+    height: 5px;
+    background: radial-gradient(#ddd,#888);
+    border-radius: 100%;
+    animation: spin 30s linear infinite;
+}
+#mercuryOrbit{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 5s linear infinite;
+}
+#mercury{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -15px;
+    top:50%;
+    animation: spin 30s linear infinite;
+}
+#VenusOrbit{
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -61px;
+    margin-left: -61px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 8s linear infinite;
+}
+#Venus{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -25px;
+    top:50%;
+    animation: spin 30s linear infinite;
+}
+#marsOrbit{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -75px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 11s linear infinite;
+}
+#mars{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -28px;
+    top:50%;
+    animation: spin 30s linear infinite;
+}
+#jupiterOrbit{
+    height: 230px;
+    width: 230px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -115px;
+    margin-left: -115px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 17s linear infinite;
+}
+#jupiter{
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -70px;
+    top:50%;
+    animation: spin 30s linear infinite;
+}
+#saturnOrbit{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 20s linear infinite;
+    
+}
+#saturn{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -80px;
+    top:50%;
+    animation: spin 30s linear infinite;
+    
+}
+#uranusOrbit{
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -175px;
+    margin-left: -175px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 23s linear infinite;
+}
+#uranus{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -85px;
+    top:50%;
+    animation: spin 30s linear infinite;
+}
+#neptuneOrbit{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    animation: spin 26s linear infinite;
+}
+#neptune{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -89px;
+    top:50%;
+    animation: spin 30s linear infinite;
+}
